@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'screens/home.dart';
 
 void main() {
@@ -11,6 +10,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        textTheme: Theme.of(context).textTheme.apply(fontFamily: 'Montserrat'),
+      ),
       debugShowCheckedModeBanner: false,
       title: 'Portfolio  Site',
       home: Home(),
