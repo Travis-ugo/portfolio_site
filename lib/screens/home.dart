@@ -26,8 +26,18 @@ class Home extends StatelessWidget {
                       children: [
                         Padding(
                           padding:
-                              const EdgeInsets.fromLTRB(0.0, 0.0, 100.0, 50.0),
+                              const EdgeInsets.fromLTRB(0.0, 0.0, 200.0, 100.0),
+                          child: Tex(),
+                        ),
+                        Padding(
+                          padding:
+                              const EdgeInsets.fromLTRB(0.0, 0.0, 200.0, 70.0),
                           child: Explore(),
+                        ),
+                        Padding(
+                          padding:
+                              const EdgeInsets.fromLTRB(0.0, 0.0, 200.0, 0.0),
+                          child: iconic,
                         ),
                       ],
                     ),

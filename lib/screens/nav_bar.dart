@@ -16,7 +16,7 @@ class Navigation extends StatelessWidget {
                 child: Row(
                   children: [
                     CircleAvatar(
-                      radius: 25,
+                      radius: 23,
                       backgroundImage: AssetImage('assets/black..jpg'),
                     ),
                   ],
@@ -55,9 +55,9 @@ class _NavBarItems extends StatelessWidget {
     return Text(
       title,
       style: TextStyle(
-        fontFamily: 'Montserrat-Bold.ttf',
+        fontFamily: 'Montserrat',
         fontSize: 22,
-        color: Colors.grey[700],
+        color: Colors.grey[500],
       ),
     );
   }
