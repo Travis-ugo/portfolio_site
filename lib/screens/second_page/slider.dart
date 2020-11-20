@@ -58,7 +58,7 @@ class Slid extends StatelessWidget {
           animationDuration: 2500,
           percent: 0.8,
           linearStrokeCap: LinearStrokeCap.roundAll,
-          // progressColor: Colors.cyanAccent,
+          progressColor: Colors.cyanAccent,
         ),
       ],
     );

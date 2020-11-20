@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfoilio/screens/center_view.dart';
+import 'package:portfoilio/screens/Home/center_view.dart';
 import 'slider.dart';
 import 'text.dart';
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfoilio/details/explore.dart';
 import 'package:portfoilio/details/portfolio_details.dart';
-import 'package:portfoilio/screens/center_view.dart';
+import 'package:portfoilio/screens/Home/center_view.dart';
 import 'nav_bar.dart';
 
 class Home extends StatelessWidget {
