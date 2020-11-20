@@ -8,7 +8,7 @@ class Explore extends StatelessWidget {
       child: Text(
         'Explore',
         style: TextStyle(
-          fontFamily: 'Montserrat-Bold.ttf',
+          fontFamily: 'Montserrat',
           fontWeight: FontWeight.bold,
           fontSize: 26,
           color: Colors.grey[600],
@@ -46,7 +46,7 @@ class Tex extends StatelessWidget {
               fontSize: 30,
               fontWeight: FontWeight.w100,
               letterSpacing: 1.0,
-              fontFamily: 'Montserrat',
+              fontFamily: 'Montserrat-Medium.ttf',
             ),
           ),
         ],

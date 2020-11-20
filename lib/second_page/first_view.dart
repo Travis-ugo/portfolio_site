@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:portfoilio/screens/center_view.dart';
-
+import 'slider.dart';
 import 'text.dart';
 
-class FirstView extends StatelessWidget {
+class About extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,10 +19,21 @@ class FirstView extends StatelessWidget {
                 VerticalDivider(),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [inco],
-                )
+                  children: [
+                    inco,
+                    SizedBox(height: 25),
+                    content,
+                  ],
+                ),
+                Spacer(),
+                Column(
+                  children: [
+                    Slid('flutter'),
+                    Slid('Dart'),
+                  ],
+                ),
               ],
-            ),
+            )
           ],
         ),
       ),
