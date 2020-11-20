@@ -4,8 +4,7 @@ import 'package:percent_indicator/percent_indicator.dart';
 
 class Slid extends StatelessWidget {
   final String lavar;
-
-  const Slid(this.lavar);
+  const Slid(this.lavar, {MaterialAccentColor progressColor});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +18,11 @@ class Slid extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: Text(
                 lavar,
-                style: TextStyle(),
+                style: TextStyle(
+                  color: Colors.grey[600],
+                  fontFamily: 'Montserrat',
+                  fontSize: 13,
+                ),
               ),
             ),
             SizedBox(width: 100),
@@ -29,10 +32,19 @@ class Slid extends StatelessWidget {
               duration: Duration(seconds: 3),
               separator: ',',
               style: TextStyle(
+                color: Colors.grey[600],
+                fontFamily: 'Montserrat',
                 fontSize: 13,
               ),
             ),
-            Text('%'),
+            Text(
+              '%',
+              style: TextStyle(
+                color: Colors.grey[600],
+                fontFamily: 'Montserrat',
+                fontSize: 13,
+              ),
+            ),
           ],
         ),
         //Spacer(),
@@ -46,7 +58,7 @@ class Slid extends StatelessWidget {
           animationDuration: 2500,
           percent: 0.8,
           linearStrokeCap: LinearStrokeCap.roundAll,
-          progressColor: Colors.cyanAccent,
+          // progressColor: Colors.cyanAccent,
         ),
       ],
     );

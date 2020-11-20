@@ -12,23 +12,18 @@ class About extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            lott,
-            lot,
+            Stext(),
             Row(
               children: [
+                Next(),
                 VerticalDivider(),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    inco,
-                    SizedBox(height: 25),
-                    content,
-                  ],
-                ),
                 Spacer(),
                 Column(
                   children: [
-                    Slid('flutter'),
+                    Slid(
+                      'flutter',
+                      progressColor: Colors.cyanAccent,
+                    ),
                     Slid('Dart'),
                   ],
                 ),

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:portfoilio/one_count.dart';
 import 'second_page/first_view.dart';
-import 'second_page/slider.dart';
 
 void main() {
   runApp(MyApp());
