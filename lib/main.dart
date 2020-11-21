@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'screens/second_page/first_view.dart';
+import 'package:portfoilio/screens/About/first_view.dart';
+
+import 'screens/Home/home.dart';
+import 'screens/My_Services/my_services.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(fontFamily: 'Montserrat'),
       debugShowCheckedModeBanner: false,
       title: 'Portfolio  Site',
-      home: About(),
+      home: Home(),
     );
   }
 }

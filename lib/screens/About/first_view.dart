@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfoilio/screens/Home/center_view.dart';
 import 'slider.dart';
-import 'text.dart';
+import '../../details/text.dart';
 
 class About extends StatelessWidget {
   @override
@@ -16,15 +16,13 @@ class About extends StatelessWidget {
             Row(
               children: [
                 Next(),
-                VerticalDivider(),
                 Spacer(),
                 Column(
                   children: [
-                    Slid(
-                      'flutter',
-                      progressColor: Colors.cyanAccent,
-                    ),
-                    Slid('Dart'),
+                    Slid('Flutter', Colors.cyanAccent, 60.0, 0.6),
+                    Slid('Dart', Colors.black, 80.0, 0.8),
+                    Slid('C', Colors.brown, 40.0, 0.4),
+                    Slid('Python', Colors.blue, 70.0, 0.7),
                   ],
                 ),
               ],

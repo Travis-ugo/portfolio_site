@@ -4,7 +4,10 @@ import 'package:percent_indicator/percent_indicator.dart';
 
 class Slid extends StatelessWidget {
   final String lavar;
-  const Slid(this.lavar, {MaterialAccentColor progressColor});
+  final Color progressColor;
+  final double percent;
+  final double person;
+  const Slid(this.lavar, this.progressColor, this.percent, this.person);
 
   @override
   Widget build(BuildContext context) {
@@ -15,34 +18,34 @@ class Slid extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 8),
               child: Text(
                 lavar,
                 style: TextStyle(
                   color: Colors.grey[600],
-                  fontFamily: 'Montserrat',
-                  fontSize: 13,
+                  fontFamily: 'Montserrat-Medium.ttf',
+                  fontSize: 16,
                 ),
               ),
             ),
             SizedBox(width: 100),
             Countup(
               begin: 0,
-              end: 100,
+              end: percent,
               duration: Duration(seconds: 3),
               separator: ',',
               style: TextStyle(
                 color: Colors.grey[600],
                 fontFamily: 'Montserrat',
-                fontSize: 13,
+                fontSize: 16,
               ),
             ),
             Text(
               '%',
               style: TextStyle(
                 color: Colors.grey[600],
-                fontFamily: 'Montserrat',
-                fontSize: 13,
+                fontFamily: 'Montserrat-Medium.ttf',
+                fontSize: 16,
               ),
             ),
           ],
@@ -52,13 +55,13 @@ class Slid extends StatelessWidget {
           height: 2,
         ),
         LinearPercentIndicator(
-          width: 200,
+          width: 300,
           animation: true,
           lineHeight: 10.0,
           animationDuration: 2500,
-          percent: 0.8,
+          percent: person,
           linearStrokeCap: LinearStrokeCap.roundAll,
-          progressColor: Colors.cyanAccent,
+          progressColor: progressColor,
         ),
       ],
     );

@@ -6,15 +6,15 @@ class Next extends StatelessWidget {
     return Column(
       children: [
         Padding(
-          padding: EdgeInsets.symmetric(vertical: 35),
+          padding: EdgeInsets.symmetric(vertical: 37),
           child: Text(
             "I'm into all things Mobile development.",
-            textAlign: TextAlign.left,
+            textAlign: TextAlign.center,
             style: TextStyle(
               fontSize: 27,
               fontFamily: 'Montserrat-Medium.ttf',
               fontWeight: FontWeight.w100,
-              color: Colors.grey[500],
+              color: Colors.grey[600],
             ),
           ),
         ),
@@ -70,6 +70,40 @@ class Stext extends StatelessWidget {
             height: 1.5,
             fontFamily: 'Montserrat-Medium.ttf',
             color: Colors.grey[500],
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class MyServciceText extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Padding(
+          padding: EdgeInsets.only(
+            bottom: 35,
+          ),
+          child: Text(
+            'My Service',
+            style: TextStyle(
+              fontSize: 40,
+              fontWeight: FontWeight.bold,
+              fontFamily: 'Montserrat-Bold.ttf',
+              color: Colors.grey[500],
+            ),
+          ),
+        ),
+        Text(
+          "i can Create beautiful responsive andriod and IOS appaliactions ",
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontSize: 27,
+            height: 1.5,
+            fontFamily: 'Montserrat-Regular.ttf',
+            color: Colors.grey[400],
           ),
         ),
       ],

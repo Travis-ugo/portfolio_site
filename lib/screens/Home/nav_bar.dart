@@ -15,9 +15,12 @@ class Navigation extends StatelessWidget {
                 width: 150,
                 child: Row(
                   children: [
-                    CircleAvatar(
-                      radius: 23,
-                      backgroundImage: AssetImage('assets/black..jpg'),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 30),
+                      child: CircleAvatar(
+                        radius: 23,
+                        backgroundImage: AssetImage('assets/black..jpg'),
+                      ),
                     ),
                   ],
                 ),
@@ -34,7 +37,7 @@ class Navigation extends StatelessWidget {
                   _NavBarItems('Portfolio'),
                   SizedBox(width: 60),
                   _NavBarItems('Contact'),
-                  SizedBox(width: 60),
+                  SizedBox(width: 50),
                 ],
               ),
             ],
