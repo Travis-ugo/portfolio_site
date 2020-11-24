@@ -55,7 +55,7 @@ class Stext extends StatelessWidget {
               fontSize: 40,
               fontWeight: FontWeight.bold,
               fontFamily: 'Montserrat-Bold.ttf',
-              color: Colors.grey[600],
+              color: Colors.grey[500],
             ),
           ),
         ),
@@ -98,6 +98,40 @@ class MyServciceText extends StatelessWidget {
         ),
         Text(
           "i can Create beautiful responsive andriod and IOS appaliactions ",
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            fontSize: 27,
+            height: 1.5,
+            fontFamily: 'Montserrat-Regular.ttf',
+            color: Colors.grey[400],
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class ProjectText extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Padding(
+          padding: EdgeInsets.only(
+            bottom: 35,
+          ),
+          child: Text(
+            'Projects',
+            style: TextStyle(
+              fontSize: 40,
+              fontWeight: FontWeight.bold,
+              fontFamily: 'Montserrat-Bold.ttf',
+              color: Colors.grey[500],
+            ),
+          ),
+        ),
+        Text(
+          "Five star Mobile applications and UI/UX Design",
           textAlign: TextAlign.center,
           style: TextStyle(
             fontSize: 27,

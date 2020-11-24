@@ -13,6 +13,7 @@ class PortfolioDetails extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
+                backgroundColor: Colors.transparent,
                 backgroundImage: AssetImage('assets/black..jpg'),
                 radius: 180,
               ),

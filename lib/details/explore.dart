@@ -31,7 +31,7 @@ class Tex extends StatelessWidget {
         children: <TextSpan>[
           new TextSpan(
             text: 'Hi,\n',
-            style: new TextStyle(
+            style: TextStyle(
               fontFamily: 'Montserrat',
               fontWeight: FontWeight.bold,
               color: Colors.grey[600],
