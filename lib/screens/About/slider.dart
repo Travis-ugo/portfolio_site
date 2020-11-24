@@ -28,11 +28,11 @@ class Slid extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(width: 100),
+            SizedBox(width: 200),
             Countup(
               begin: 0,
               end: percent,
-              duration: Duration(seconds: 3),
+              duration: Duration(seconds: 4),
               separator: ',',
               style: TextStyle(
                 color: Colors.grey[600],
@@ -58,7 +58,7 @@ class Slid extends StatelessWidget {
           width: 300,
           animation: true,
           lineHeight: 10.0,
-          animationDuration: 2500,
+          animationDuration: 3500,
           percent: person,
           linearStrokeCap: LinearStrokeCap.roundAll,
           progressColor: progressColor,

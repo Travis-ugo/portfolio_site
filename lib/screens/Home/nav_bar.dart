@@ -28,7 +28,12 @@ class Navigation extends StatelessWidget {
               Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  _NavBarItems('Home'),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.pushNamed(context, '/About');
+                    },
+                    child: _NavBarItems('Home'),
+                  ),
                   SizedBox(width: 60),
                   _NavBarItems('About'),
                   SizedBox(width: 60),

@@ -5,19 +5,26 @@ class PortfolioDetails extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 600,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.center,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          CircleAvatar(
-            backgroundImage: AssetImage('assets/black..jpg'),
-            radius: 180,
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              CircleAvatar(
+                backgroundImage: AssetImage('assets/black..jpg'),
+                radius: 180,
+              ),
+            ],
           ),
-          // SizedBox(width: 20),
+          SizedBox(width: 10),
           VerticalDivider(
-            width: 15.0,
-            color: Colors.black,
-            thickness: 10.0,
+            width: 1.0,
+            color: Colors.grey[400],
+            thickness: 1.0,
+            indent: 70.0,
+            endIndent: 70.0,
           ),
         ],
       ),

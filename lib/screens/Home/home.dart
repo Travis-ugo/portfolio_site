@@ -47,6 +47,8 @@ class Home extends StatelessWidget {
             )
           ],
         ),
+        // About(),
+        // MyService(),
       ),
     );
   }

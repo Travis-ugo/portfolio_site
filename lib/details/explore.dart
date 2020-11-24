@@ -17,7 +17,7 @@ class Explore extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.transparent,
         borderRadius: BorderRadius.circular(35),
-        border: Border.all(color: Colors.grey[600]),
+        border: Border.all(color: Colors.grey[500]),
       ),
     );
   }

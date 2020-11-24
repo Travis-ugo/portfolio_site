@@ -19,10 +19,14 @@ class Tard extends StatefulWidget {
 
 class _TardState extends State<Tard> {
   var col = Colors.grey[50];
-  bool isFiled = false;
   double height = 200;
   double wid = 270;
   Color cat = Colors.grey[500];
+
+  bool isFiled = true;
+  void toggleView() {
+    setState(() => isFiled = !isFiled);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +36,7 @@ class _TardState extends State<Tard> {
       },
       onHover: (isFiled) {
         setState(() {
-          if (isFiled == true) {
+          if (isFiled) {
             height = 250;
             wid = 320;
             col = Colors.pink;
@@ -100,3 +104,21 @@ class _TardState extends State<Tard> {
     );
   }
 }
+
+//  onHover: (isFiled) {
+//         setState(() {
+//           if (isFiled) {
+//             height = 250;
+//             wid = 320;
+//             col = Colors.pink;
+//             cat = Colors.white;
+//           } else {
+//             col = Colors.grey[50];
+//             height = 200;
+//             wid = 270;
+//             cat = Colors.grey[500];
+//           }
+
+//           // col = Colors.blue[500];
+//         });
+//       },
